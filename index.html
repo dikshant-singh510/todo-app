@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Todo App</title>
+  <!-- HTML -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Ubuntu&display=swap" rel="stylesheet">
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <h2>My Tasks</h2>
+      <div id="todo_form">
+        <div id="input_icon">
+          <i class="fi-sr-pencil"></i>
+        </div>
+        <input type="text" name="" id="input_box" placeholder="e.g, go to gym" />
+        <div id="input_crossbtn">
+          <i class="fi-br-cross-small"></i>
+        </div>
+      </div>
+    </header>
+    <div class="taskbody">
+      <div class="taskarea">
+        <!-- Dummy Task Box Starts-->
+        <div class="taskbox">
+          <div class="textbox">Enter Task to see result
+          </div>
+          <div class="checkbox_area">
+            <input type="checkbox" class="checkbox" />
+            <div class="deleteTask">
+              <i class="fi-rr-trash removeTask"></i>
+            </div>
+          </div>
+        </div>
+        <!-- Dummy Task Box Starts-->
+      </div>
+    </div>
+    <footer class="footer">
+      <div id="add_task_btn">
+        <i class="fi-br-plus"></i>
+      </div>
+      <div id="delete_all_btn">
+        <i class="fi-rr-file-delete"></i>
+      </div>
+      <div id="filter">
+        <i class="fi-rr-settings-sliders"></i>
+        <div id="filter_menu">
+          <div class="filter_title">Filter</div>
+          <ul class="ul">
+            <li class="li">
+              <i class="fi-rr-document"></i>
+              <a href="#" id="all">All</a></li>
+            <li class="li">
+              <i class="fi-rr-file-check"></i>
+              <a href="#" id="completed">Completed</a></li>
+            <li class="li">
+              <i class="fi-rr-file-delete"></i>
+              <a href="#" id="incompleted">Incompleted</a></li>
+          </ul>
+          <!--
+            A original UI/UX ToDo or task application created by DS Creation. -->
+          <div class="rights">
+            &copy; of &ThickSpace;<span>DS</span> </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <!-- Project -->
+  <script src="main.js"></script>
+</body>
+
+</html>
